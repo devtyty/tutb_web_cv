@@ -1,0 +1,557 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+ol, ul {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+table {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table th,
+table td {
+  padding: 0.5em;
+  border: 1px solid #000;
+}
+
+table th {
+  font-weight: bold;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body * {
+  max-height: 99999em;
+  word-break: break-word;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+label,
+select,
+button {
+  line-height: inherit;
+}
+
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  word-break: normal;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  -webkit-appearance: none;
+  font: inherit;
+}
+
+button:focus {
+  outline: 0;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: auto;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+}
+
+::-webkit-search-decoration {
+  display: none;
+}
+
+textarea {
+  overflow: auto;
+  white-space: pre-line;
+  resize: none;
+  line-height: 1.5;
+}
+
+/* animation */
+
+/* ------------------------- */
+body {
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.trans {
+  transition: opacity .26s ease;
+}
+
+.trans:hover {
+  opacity: .8;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  padding-top: 50px;
+  margin-bottom: 80px;
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .list-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 7px;
+}
+
+header .list-navigation li{
+  margin: 0 20px;
+}
+
+header .button-menu {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+header .button-menu span {
+  position: absolute;
+  display: inline-block;
+  width: 80%;
+  height: 2px;
+  background-color: #000;
+  border-radius: 5px;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+header .button-menu span:nth-child(1) {
+  top: 10px;
+}
+
+header .button-menu span:nth-child(2) {
+  top: 20px;
+}
+header .button-menu span:nth-child(3) {
+  top: 30px;
+}
+
+/* main */
+
+main .block-keyvisual {
+  margin-bottom: 200px;
+}
+
+main .block-content {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+main .title-keyvisual {
+  font-size: 100px;
+  font-weight: 400;
+  margin-bottom: 0;
+  position: absolute;
+  right: calc(50% + -334px);
+  top: 200px;
+  z-index: 1;
+}
+
+main .text-content {
+  line-height: 20px;
+}
+
+main .image-keyvisual {
+  width: 414px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+main .content-right {
+  border: solid 1px #c5c5c5;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  margin-left: -30px;
+  position: relative;
+  min-height: 222px;
+  bottom: -62px;
+}
+
+main .title-content {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: solid 1px #d9d9d9;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+main .image-keyvisual:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 105%;
+  height: 103%;
+  border: solid 1px #d9d9d9;
+  border-radius: 35px;
+}
+
+/* block-experiences */
+
+.block-experiences {
+  margin-bottom: 200px;
+}
+
+.title-experiences {
+  font-size: 80px;
+}
+
+.list-experiences {
+  width: 50%;
+  margin-left: auto;
+}
+
+.title-list {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.title-list:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.text-list {
+  line-height: 1;
+  margin-bottom: 0;
+  margin-left: 19px;
+}
+
+.text-list span {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.text-list span:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: #000;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.list-experiences li {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.list-experiences li:not(:last-child):before {
+  position: absolute;
+  content: "";
+  top: 21px;
+  left: 1px;
+  height: 100%;
+  width: 1px;
+  background-color: #333;
+}
+
+/* "block-portfolio */
+.block-portfolio {
+  margin-bottom: 200px;
+}
+
+.block-portfolio .image-portfolio {
+  text-align: center;
+}
+
+/* block-skills */
+.block-skills {
+  text-align: right;
+  margin-bottom: 200px;
+}
+
+.block-skills .title-skills {
+  font-size: 80px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.block-skills .text-skills {
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.block-skills .list-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.block-skills .list-skills li {
+  position: relative;
+  width: 20%;
+  text-align: center;
+}
+
+.block-skills .list-skills li:before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: url(../img/img_03.png);
+  width: 74px;
+  height: 73px;
+}
+
+/* block-project */
+.block-project {
+  margin-bottom: 500px;
+}
+
+.block-project .title-project,
+.block-project .text-project {
+  text-align: center;
+}
+.block-project p {
+  margin-bottom: 0;
+}
+
+.block-project .title-project {
+  font-size: 80px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.block-project .title-project:before {
+  position: absolute;
+  content: "";
+  top: -95px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100px;
+  background-color: #000;
+}
+
+.block-project .text-project {
+  margin-bottom: 60px;
+}
+
+.block-project .content-detail {
+  width: 100%;
+  padding: 43px 29px;
+}
+
+.block-project .image-left {
+  width: 50%;
+  flex-shrink: 0;
+}
+
+.block-project .image-left img {
+  width: 100%;
+}
+
+.list-project li {
+  display: flex;
+  align-items: flex-end;
+  border: solid 1px #000;
+}
+
+.list-project li:nth-child(2n+2) .image-left {
+  order: 2;
+}
+
+.list-project li:nth-child(2n+2) .content-bottom a {
+  order: 2;
+}
+
+.list-project li:nth-child(2n+2) .title-detail {
+  text-align: right;
+}
+
+.list-project li:nth-child(2n+2) .content-bottom a img {
+  transform: scale(-1);
+}
+
+.block-project .content-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-project .title-detail {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.block-project .title-detail span {
+  display: block;
+  font-weight: normal;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+footer .title-footer {
+  font-size: 80px;
+  border-bottom: solid 1px #fff;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  width: 635px;
+}
+
+footer .list-social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer .list-social li {
+  margin: 0 25px;
+}
