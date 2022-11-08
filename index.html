@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="animation.css">
   <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
-  <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
-  <link href="https://fonts.cdnfonts.com/css/mislian" rel="stylesheet">
-  <link href="https://fonts.cdnfonts.com/css/mulish" rel="stylesheet">
+  <script async src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+  <link async href="https://fonts.cdnfonts.com/css/mislian" rel="stylesheet">
+  <link async href="https://fonts.cdnfonts.com/css/mulish" rel="stylesheet">
 </head>
 <body>
   <header class="wow bounce">
@@ -38,12 +38,12 @@
   <main>
     <div class="block-keyvisual">
       <div class="wrapper">
-        <h1 class="title-keyvisual wow rollIn font-mislian">TU BUU TRAN</h1>
-        <div class="block-content wow bounceInDown">
+        <h1 class="title-keyvisual wow rollIn font-mislian" data-wow-delay="1s">TU BUU TRAN</h1>
+        <div class="block-content wow bounceInDown" data-wow-delay="1s">
           <figure class="image-keyvisual">
             <img src="./img/img_01.jpg" alt="">
           </figure>
-          <div class="content-right wow bounceInRight">
+          <div class="content-right wow bounceInRight" data-wow-delay="1s">
             <h2 class="title-content">About</h2>
             <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing laoreet id tellus sit. A diam morbi praesent ac id malesuada hendrerit. Viverra ullamcorper tortor egestas justo aliquam. Nibh blandit mauris sed feugiat nulla in viverra semper habitant. Nulla euismod condimentum pellentesque ipsum ac arcu. Viverra pharetra aliquet aliquet viverra nullam diam. Senectus pharetra, dignissim suspendisse quam enim sed.</p>
           </div>
@@ -193,9 +193,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
   new WOW().init();
-  var x = document.getElementsByTagName("BODY")[0];
-  setTimeout(function() {
-    x.style.setProperty("opacity", "1", "important")
-  },1500);
 </script>
 </html>
