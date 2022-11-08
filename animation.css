@@ -1,0 +1,34 @@
+
+
+@keyframes rotateRight {
+  form {
+    transform: rotate(0)
+  }
+  to {
+    transform: rotate(-360deg)
+  }
+}
+
+@keyframes circle-move {
+  0% {
+    top: -102px;
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  80% {
+    opacity: .9; }
+  100% {
+    top: -2px;
+    opacity: 0; } }
+
+@keyframes circle-move-revert {
+  0% {
+    top: -2px;
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  80% {
+    opacity: .9; }
+  100% {
+    top: -94px;
+    opacity: 0; } }

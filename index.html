@@ -4,11 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trần Bửu Tú</title>
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="animation.css">
+  <link rel='stylesheet' href='https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css'>
+  <script src='https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js'></script>
+  <link href="https://fonts.cdnfonts.com/css/mislian" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/mulish" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header class="wow bounce">
     <div class="wrapper">
       <nav class="header-navigation">
         <ul class="list-navigation">
@@ -32,12 +38,12 @@
   <main>
     <div class="block-keyvisual">
       <div class="wrapper">
-        <h1 class="title-keyvisual">TU BUU TRAN</h1>
-        <div class="block-content">
+        <h1 class="title-keyvisual wow rollIn font-mislian">TU BUU TRAN</h1>
+        <div class="block-content wow bounceInDown">
           <figure class="image-keyvisual">
             <img src="./img/img_01.jpg" alt="">
           </figure>
-          <div class="content-right">
+          <div class="content-right wow bounceInRight">
             <h2 class="title-content">About</h2>
             <p class="text-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing laoreet id tellus sit. A diam morbi praesent ac id malesuada hendrerit. Viverra ullamcorper tortor egestas justo aliquam. Nibh blandit mauris sed feugiat nulla in viverra semper habitant. Nulla euismod condimentum pellentesque ipsum ac arcu. Viverra pharetra aliquet aliquet viverra nullam diam. Senectus pharetra, dignissim suspendisse quam enim sed.</p>
           </div>
@@ -47,13 +53,13 @@
 
     <div class="block-experiences">
       <div class="wrapper">
-        <h1 class="title-experiences">Experiences</h1>
+        <h1 class="title-experiences wow rollIn font-mislian">Experiences</h1>
         <ul class="list-experiences">
-          <li>
+          <li class="wow bounce">
             <h2 class="title-list">VNG Corporation,  2021- Present</h2>
             <p class="text-list">UX/UI Designer, Graphic Designer<span>Tools:  Figma, AI, PTS, Jira</span></p>
           </li>
-          <li>
+          <li class="wow flash">
             <h2 class="title-list">Freelancer,  2020- 2021</h2>
             <p class="text-list"> Graphic Designer<span>Tools: Figma, AI, PTS</span></p>
           </li>
@@ -61,7 +67,7 @@
       </div>
     </div>
 
-    <div class="block-portfolio">
+    <div class="block-portfolio wow pulse">
       <div class="wrapper">
         <figure class="image-portfolio">
           <img src="./img/img_02.svg" alt="">
@@ -71,24 +77,24 @@
 
     <div class="block-skills">
       <div class="wrapper">
-        <h2 class="title-skills">Skills<br>Software</h2>
-        <p class="text-skills">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing<br> laoreet id tellus sit. A diam morbi praesent ac id malesuada hendrerit.<br>Viverra ullamcorper tortor e</p>
+        <h2 class="title-skills wow swing font-mislian">Skills<br>Software</h2>
+        <p class="text-skills wow shake">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing<br> laoreet id tellus sit. A diam morbi praesent ac id malesuada hendrerit.<br>Viverra ullamcorper tortor e</p>
         <ul class="list-skills">
-          <li>Figma</li>
-          <li>Figma</li>
-          <li>Figma</li>
-          <li>Figma</li>
-          <li>Figma</li>
+          <li class="wow swing">Figma</li>
+          <li class="wow tada">Figma</li>
+          <li class="wow wobble">Figma</li>
+          <li class="wow bounceIn">Figma</li>
+          <li class="wow bounceInDown">Figma</li>
         </ul>
       </div>
     </div>
 
     <div class="block-project">
       <div class="wrapper">
-        <h2 class="title-project">My Projects</h2>
-        <p class="text-project">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing laoreet id tellus sit.<br> A diam morbi  aesent ac id malesuada hendrerit. Viverra ullamcorper tortor egestas justo aliquam</p>
+        <h2 class="title-project wow bounceInLeft font-mislian">My Projects</h2>
+        <p class="text-project wow bounceInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Adipiscing laoreet id tellus sit.<br> A diam morbi  aesent ac id malesuada hendrerit. Viverra ullamcorper tortor egestas justo aliquam</p>
         <ul class="list-project">
-          <li>
+          <li class="wow bounceInUp">
             <figure class="image-left">
               <img src="./img/img_04.jpg" alt="">
             </figure>
@@ -96,14 +102,15 @@
               <h3 class="title-detail">MEDBIE- <span>MOBILE APP</span></h3>
               <div class="content-bottom">
                 <a href="#" class="trans">
-                  <img src="./img/img_05.png" alt="">
+                  <img class="image-normal" src="./img/img_05.png" alt="">
+                  <img class="image-hover" src="./img/img_05_hover.png" alt="">
                 </a>
                 <p class="text-time">2021</p>
               </div>
             </div>
           </li>
 
-          <li>
+          <li class="wow rotateInUpRight">
             <figure class="image-left">
               <img src="./img/img_04.jpg" alt="">
             </figure>
@@ -111,14 +118,15 @@
               <h3 class="title-detail">DR. SCOPE-<span>WEB APP</span></h3>
               <div class="content-bottom">
                 <a href="#" class="trans">
-                  <img src="./img/img_05.png" alt="">
+                  <img class="image-normal" src="./img/img_05.png" alt="">
+                  <img class="image-hover" src="./img/img_05_hover.png" alt="">
                 </a>
                 <p class="text-time">2021</p>
               </div>
             </div>
           </li>
 
-          <li>
+          <li class="wow flipInY">
             <figure class="image-left">
               <img src="./img/img_04.jpg" alt="">
             </figure>
@@ -126,14 +134,15 @@
               <h3 class="title-detail">MEDBIE- <span>MOBILE APP</span></h3>
               <div class="content-bottom">
                 <a href="#" class="trans">
-                  <img src="./img/img_05.png" alt="">
+                  <img class="image-normal" src="./img/img_05.png" alt="">
+                  <img class="image-hover" src="./img/img_05_hover.png" alt="">
                 </a>
                 <p class="text-time">2021</p>
               </div>
             </div>
           </li>
 
-          <li>
+          <li class="wow flipInX">
             <figure class="image-left">
               <img src="./img/img_04.jpg" alt="">
             </figure>
@@ -141,7 +150,8 @@
               <h3 class="title-detail">MEDBIE- <span>MOBILE APP</span></h3>
               <div class="content-bottom">
                 <a href="#" class="trans">
-                  <img src="./img/img_05.png" alt="">
+                  <img class="image-normal" src="./img/img_05.png" alt="">
+                  <img class="image-hover" src="./img/img_05_hover.png" alt="">
                 </a>
                 <p class="text-time">2021</p>
               </div>
@@ -154,8 +164,8 @@
 
   <footer>
     <div class="wrapper">
-      <p class="title-footer">Contact<br>Info</p>
-      <ul class="list-social">
+      <p class="title-footer wow rotateInDownLeft font-mislian">Contact<br>Info</p>
+      <ul class="list-social wow rotateInDownRight">
         <li>
           <a href="" class="trans" target="_blank" rel="noopener">
             <img src="./img/icn_social_01.png" alt="">
@@ -180,4 +190,8 @@
     </div>
   </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 </html>
